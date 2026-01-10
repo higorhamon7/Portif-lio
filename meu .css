@@ -1,0 +1,155 @@
+/* VARIÁVEIS */
+:root {
+    --blue: #0a66c2;
+    --vibrant-orange: #ff6b6b; /* Cor vibrante para gradiente */
+    --vibrant-green: #28a745; /* Verde vibrante para títulos */
+    --vibrant-pink: #e91e63; /* Rosa vibrante para hover */
+    --light-bg: #f4f6f8;
+    --dark-bg: #121212;
+    --light-card: #ffffff;
+    --dark-card: #1e1e1e;
+    --text-light: #1f1f1f;
+    --text-dark: #eaeaea;
+    --dark-purple: #4a148c; /* Roxo vibrante para tema escuro */
+}
+
+/* TEMAS */
+.light-theme {
+    --bg: var(--light-bg);
+    --card: var(--light-card);
+    --text: var(--text-light);
+}
+
+.dark-theme {
+    --bg: var(--dark-bg);
+    --card: var(--dark-card);
+    --text: var(--text-dark);
+    --blue: var(--dark-purple); /* Azul muda para roxo no escuro */
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+/* LAYOUT */
+body {
+    background-color: var(--bg);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 300px;
+    background-color: var(--blue);
+    padding: 40px 25px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+}
+
+.sidebar h1,
+.sidebar p,
+.sidebar h3 {
+    color: white;
+}
+
+.role {
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+.sidebar-section {
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row; /* Botões lado a lado */
+    gap: 15px;
+    justify-content: center; /* Centralizados */
+}
+
+/* BOTÕES */
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px; /* Bordas mais arredondadas */
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    color: var(--blue);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço para ícones */
+}
+
+.btn:hover {
+    background-color: var(--vibrant-pink); /* Hover vibrante */
+    color: white;
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+.btn i {
+    font-size: 1.1rem; /* Ícones maiores */
+}
+
+/* CONTEÚDO */
+.content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--card);
+    padding: 25px;
+    border-radius: 12px; /* Bordas mais suaves */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Hover nos cards */
+}
+
+.card h2 {
+    color: var(--vibrant-green); /* Verde vibrante */
+    margin-bottom: 10px;
+}
+
+.card ul {
+    margin-left: 20px;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column; /* Empilha em mobile */
+    }
+}
