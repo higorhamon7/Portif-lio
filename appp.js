@@ -25,7 +25,7 @@ function toggleTheme() {
 function openLinkedIn() {
     try {
         window.open(
-            'https://www.linkedin.com/in/higor-hamon-566886322',
+            'https://www.linkedin.com/in/higorhamon-',
             '_blank',
             'noopener' // Segurança
         );
