@@ -1,86 +1,286 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Higor Hamon</title>
-    <link rel="stylesheet" href="meu .css">
-    <!-- Adicionado Font Awesome para ícones vibrantes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Portfólio de Higor Hamon, estudante de Engenharia da Computação, com projetos de programação, robótica e tecnologia.">
+
+    <link rel="icon" type="image/jpeg"
+          href="imagens1/Gemini_Generated_Image_s2et8ds2et8ds2et.jpg">
+    <link rel="stylesheet" href="css/meucss2.css">
+
+    <title>Higor Hamon | Portfólio</title>
+    <script src="app.js" defer></script>
 </head>
 
-<body class="light-theme">
-    <div class="container">
-        <!-- COLUNA ESQUERDA -->
-        <aside class="sidebar">
-            <h1>Higor Hamon</h1>
-            <p class="role">
-                IT Support<br>
-                Help Desk<br>
-                Redes de Computadores
+<body>
+    <header class="topo">
+        <a href="#inicio" class="marca">HH<span>.</span></a>
+
+        <nav class="menu" aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-texto">
+                <p class="etiqueta">ENGENHARIA DA COMPUTAÇÃO · UNISANTA</p>
+
+                <h1>Olá, eu sou <span>Higor Hamon.</span></h1>
+
+                <h2>Estudante de tecnologia, programação e robótica.</h2>
+
+                <p class="descricao">
+                    Desenvolvo projetos que conectam software, hardware e
+                    criatividade. Estou construindo minha experiência prática
+                    e buscando oportunidades para aprender e contribuir
+                    com soluções tecnológicas.
+                </p>
+
+                <div class="botoes">
+                    <a href="#projetos" class="botao principal">
+                        Conheça meus projetos
+                    </a>
+
+                    <a href="#contato" class="botao secundario">
+                        Entre em contato
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-foto">
+                <img src="imagens1/minha foto.png"
+                     alt="Foto de perfil de Higor Hamon"
+                     class="imagem-perfil">
+            </div>
+        </section>
+
+        <section id="sobre" class="secao">
+            <div class="titulo-secao">
+                <p class="etiqueta">QUEM SOU</p>
+                <h2>Sobre mim</h2>
+            </div>
+
+            <div class="sobre-conteudo">
+                <p>
+                    Sou estudante do 2º semestre de Engenharia da Computação
+                    na Universidade Santa Cecília (UNISANTA) e formado como
+                    Técnico em Redes de Computadores pelo SENAI Santos.
+                </p>
+
+                <p>
+                    Tenho interesse em programação, desenvolvimento web,
+                    redes, automação e integração entre hardware e software.
+                    Busco oportunidades para aplicar meus conhecimentos,
+                    desenvolver projetos e evoluir profissionalmente na área
+                    de tecnologia.
+                </p>
+            </div>
+
+            <div class="formacao">
+                <article class="cartao">
+                    <span class="icone">01</span>
+                    <h3>Engenharia da Computação</h3>
+                    <p>Universidade Santa Cecília — UNISANTA</p>
+                    <span class="detalhe">Em andamento · 2º semestre</span>
+                </article>
+
+                <article class="cartao">
+                    <span class="icone">02</span>
+                    <h3>Técnico em Redes de Computadores</h3>
+                    <p>SENAI Santos</p>
+                    <span class="detalhe">Curso concluído</span>
+                </article>
+
+                <article class="cartao">
+                    <span class="icone">03</span>
+                    <h3>Experiência profissional</h3>
+                    <p>Pet shop</p>
+                    <span class="detalhe">
+                        Atendimento ao cliente, operação de caixa e apoio
+                        às rotinas do estabelecimento.
+                    </span>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="secao fundo-suave">
+            <div class="titulo-secao">
+                <p class="etiqueta">CONHECIMENTOS</p>
+                <h2>Habilidades técnicas</h2>
+                <p>Conhecimentos desenvolvidos nos estudos e projetos.</p>
+            </div>
+
+            <div class="habilidades">
+                <article class="habilidade">
+                    <h3>Programação e Web</h3>
+                    <div class="etiquetas">
+                        <span>Python</span>
+                        <span>C++</span>
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </article>
+
+                <article class="habilidade">
+                    <h3>Redes de computadores</h3>
+                    <div class="etiquetas">
+                        <span>IPv4</span>
+                        <span>VLAN</span>
+                        <span>DHCP</span>
+                        <span>DNS</span>
+                        <span>Roteamento</span>
+                        <span>ACL</span>
+                        <span>Packet Tracer</span>
+                    </div>
+                </article>
+
+                <article class="habilidade">
+                    <h3>Hardware e IoT</h3>
+                    <div class="etiquetas">
+                        <span>Arduino</span>
+                        <span>PyFirmata</span>
+                        <span>Integração hardware/software</span>
+                        <span>Manutenção de computadores</span>
+                    </div>
+                </article>
+
+                <article class="habilidade">
+                    <h3>Outros conhecimentos</h3>
+                    <div class="etiquetas">
+                        <span>AWS Academy</span>
+                        <span>Excel</span>
+                        <span>Inglês básico</span>
+                    </div>
+                </article>
+            </div>
+
+            <p class="observacao">
+                Os conhecimentos apresentados estão em diferentes níveis
+                de desenvolvimento, conforme minha experiência acadêmica.
+            </p>
+        </section>
+
+        <section id="projetos" class="secao">
+            <div class="titulo-secao">
+                <p class="etiqueta">NA PRÁTICA</p>
+                <h2>Projetos em destaque</h2>
+                <p>
+                    Experiências acadêmicas e projetos que fazem parte
+                    da minha evolução na tecnologia.
+                </p>
+            </div>
+
+            <div class="trabalhos">
+                <article class="trab">
+                    <img src="imagens1/WhatsApp Image 2026-10-09 at 14.43.39.jpeg"
+                         alt="Protótipo de mão robótica"
+                         class="imagem-projeto">
+
+                    <div class="trab-conteudo">
+                        <p class="categoria">ROBÓTICA · 2026</p>
+                        <h3>Mão Robótica — UNISANTA</h3>
+                        <p>
+                            Desenvolvimento de um protótipo capaz de
+                            reproduzir movimentos de uma mão humana
+                            capturados por câmera, integrando programação,
+                            visão computacional, Arduino e servomotores.
+                        </p>
+                        <div class="etiquetas">
+                            <span>Python</span>
+                            <span>Arduino</span>
+                            <span>Hardware</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="trab">
+                    <img src="imagens1/desafio de ideias.jpg"
+                         alt="Registro do Desafio de Ideias do SENAI"
+                         class="imagem-projeto">
+
+                    <div class="trab-conteudo">
+                        <p class="categoria">INOVAÇÃO · 2024</p>
+                        <h3>Desafio de Ideias — SENAI</h3>
+                        <p>
+                            Participação no desenvolvimento de uma solução
+                            para melhorar a eficiência de oficinas, com
+                            contribuição na implementação de um software
+                            de gestão de manutenção. O projeto foi
+                            apresentado em um pitch de sete minutos.
+                        </p>
+                        <div class="etiquetas">
+                            <span>Software</span>
+                            <span>Inovação</span>
+                            <span>Trabalho em equipe</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="trab">
+                    <img src="imagens1/Captura de tela 2026-10-09 145627.png"
+                         alt="Identidade visual do projeto Harbor Link"
+                         class="imagem-projeto">
+
+                    <div class="trab-conteudo">
+                        <p class="categoria">LOGÍSTICA · 2025</p>
+                        <h3>Harbor Link — Projeto Integrador</h3>
+                        <p>
+                            Proposta tecnológica para monitorar e organizar
+                            o fluxo de caminhões no Porto de Santos, com
+                            integração de GPS, comunicação 4G e uma
+                            plataforma web voltada à gestão logística.
+                        </p>
+                        <div class="etiquetas">
+                            <span>Redes</span>
+                            <span>GPS</span>
+                            <span>Plataforma web</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <p class="etiqueta">VAMOS CONVERSAR?</p>
+            <h2>Vamos construir algo juntos.</h2>
+            <p>
+                Estou aberto a oportunidades de estágio, colaboração
+                em projetos e novos desafios na área de tecnologia.
             </p>
 
-            <div class="sidebar-section">
-                <h3>Objetivo</h3>
-                <p>
-                    Ingressar na área de Tecnologia da Informação como jovem aprendiz,
-                    estagiário ou em cargos de entrada, com foco em suporte técnico
-                    e aprendizado contínuo.
-                </p>
+            <div class="botoes contato-botoes">
+                <a href="mailto:higorhamon7@gmail.com"
+                   class="botao claro">
+                    Enviar e-mail
+                </a>
+
+                <a href="https://www.linkedin.com/in/higorhamon-/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="botao contorno">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/higorhamon7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="botao contorno">
+                    GitHub
+                </a>
             </div>
+        </section>
+    </main>
 
-            <div class="buttons">
-                <button class="btn theme-btn" aria-label="Alternar tema">
-                    <i class="fas fa-moon"></i> Dark Mode
-                </button>
-                <button class="btn linkedin-btn" aria-label="Visitar LinkedIn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </button>
-            </div>
-        </aside>
-
-        <!-- COLUNA DIREITA -->
-        <main class="content">
-            <section class="card">
-                <h2>Sobre mim</h2>
-                <p>
-                    Sou recém-formado no Ensino Médio e no Curso Técnico em Redes de
-                    Computadores pelo SENAI Santos, com formação voltada para
-                    infraestrutura de TI, redes e suporte técnico.
-                </p>
-            </section>
-
-            <section class="card">
-                <h2>Competências Técnicas</h2>
-                <ul>
-                    <li>Redes de computadores (TCP/IP, DHCP, DNS)</li>
-                    <li>Cabeamento estruturado</li>
-                    <li>Configuração básica de switches e roteadores</li>
-                    <li>Montagem e manutenção de computadores</li>
-                    <li>Windows (instalação e configuração)</li>
-                    <li>Suporte técnico ao usuário</li>
-                    <li>Noções de segurança da informação</li>
-                </ul>
-            </section>
-
-            <section class="card">
-                <h2>Certificações</h2>
-                <ul>
-                    <li>5G – SENAI</li>
-                    <li>AWS Academy Graduate – Cloud Foundations</li>
-                    <li>Introduction to Cybersecurity – Cisco</li>
-                    <li>LGPD – SENAI</li>
-                    <li>Indústria 4.0 – SENAI</li>
-                    <li>Web 3.0 – SENAI</li>
-                    <li>Excel Básico – SENAI</li>
-                    <li>Fundamentos da IA – SENAI</li>
-                    <li>Ética na IA – SENAI</li>
-                    <li>Criação de sites com HTML, CSS e JS – Bradesco</li>
-                </ul>
-            </section>
-        </main>
-    </div>
-
-    <script src="appp.js"></script>
+    <footer class="rodape">
+        <p>Desenvolvido por Higor Hamon · 2026</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+    </footer>
 </body>
 </html>
